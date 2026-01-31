@@ -110,8 +110,6 @@
 
 
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -188,6 +186,528 @@ function App() {
             <td><span className="session-chip physics">Geography</span></td>
             <td><span className="session-chip physics">Physics</span></td>
             <td><span className="session-chip physics">Physics</span></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             {/* there are four sessions a day */}
