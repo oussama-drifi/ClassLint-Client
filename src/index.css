@@ -10,49 +10,100 @@ body {
   font-family: "poppins";
 }
 
-.wrapper {
+.table-wrapper {
+  width: 100%;
   overflow-x: auto;
-  width: 80%;
-}
-table {
-  border:  2px solid black;
-  border-collapse: collapse;
-
-  & td, th {
-    padding: 10px;
-    border: 2px solid black;
-  }
-}
-/* sticky header (important) */
-/* thead th {
-  position: sticky;
-  top: 0;
+  overflow-y: hidden;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
   background: #fff;
-  z-index: 2;
-} */
+}
 
-
-
+.schedule-table {
+  width: 100%;
+  min-width: 1400px; /* VERY important for big tables */
+  border-collapse: collapse;
+  font-size: 14px;
+}
 
 .schedule-table th,
 .schedule-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
+  border: 1px solid #e6e6e6;
+  padding: 8px 6px;
   text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
-.schedule-table th {
-  background: #f4f4f4;
+
+.schedule-table thead tr:first-child th {
+  background: #f5f7fa;
+  font-weight: 600;
+  font-size: 15px;
+}
+.schedule-table thead tr:nth-child(2) th {
+  background: #fafafa;
+  font-weight: 500;
+  font-size: 13px;
+}
+.schedule-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
-.session {
+.schedule-table tbody td:first-child,
+.schedule-table thead th:first-child {
+  position: sticky;
+  left: 0;
+  background: #f9fafb;
+  z-index: 4;
+  font-weight: 600;
+}
+
+.schedule-table td:not(:first-child) {
+  min-width: 120px;
+  height: 48px;
+}
+.schedule-table td:not(:empty) {
   background: #e3f2fd;
-  padding: 6px;
-  border-radius: 4px;
+  border-color: #bbdefb;
+  font-weight: 500;
+}
+.schedule-table td:empty {
+  background: #fcfcfc;
+  cursor: pointer;
 }
 
-.add-btn {
-  background: none;
-  border: 1px dashed #aaa;
-  cursor: pointer;
+.schedule-table td:empty:hover {
+  background: #f0f0f0;
+}
+.schedule-table tbody tr:hover td {
+  background-color: #f7faff;
+}
+.schedule-table td:focus-within {
+  outline: 2px solid #1976d2;
+  outline-offset: -2px;
+}
+
+
+
+@media (max-width: 768px) {
+  .schedule-table {
+    font-size: 12px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 6px 4px;
+  }
+}
+
+.session-chip {
+  display: inline-block;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  background: #2196f3;
+  color: #fff;
 }

@@ -118,8 +118,7 @@ function App() {
   
 
   return (
-    <div className='wrapper'>
-      {/* <h1>hello oussama</h1> */}
+    <div className='table-wrapper'>
       <table className='schedule-table'>
         <thead>
           <tr>
@@ -159,14 +158,65 @@ function App() {
           </tr>
         </thead>
         <tbody>
+          {/* i will render this for each group */}
+          {/* this example if dor 2 groups and there will be more */}
           <tr>
-            <td>FS-201</td>
-            <td>physics</td>
-            <td>math</td>
-            <td>english</td>
-            <td>Chemics</td>
-            <td>frensh</td>
-            <td>philosofy</td>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 1</td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+          </tr>
+          <tr>
+            {/* there are four sessions a day */}
+            {/* empty slots indicates no session for that group */}
+            <td>Groupe 2</td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">Chemistry</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">English</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Physics</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td><span className="session-chip physics">Geography</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span className="session-chip physics">Frensh</span></td>
+            <td></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td><span className="session-chip physics">Math</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -175,4 +225,3 @@ function App() {
 }
 
 export default App
-
