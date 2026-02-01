@@ -106,21 +106,13 @@
 
 
 
-// actual App
-
-
-import { useState } from 'react'
-import './App.css'
-
-function App() {
-  
-
-  return (
+function TableSchedule() {
+    return (
     <div className='table-wrapper'>
       <table className='schedule-table'>
         <thead>
           <tr>
-            <th rowSpan={2}>Groups / Days</th>
+            <th rowSpan={2}></th>
             <th colSpan={4}>Monday</th>
             <th colSpan={4}>Tuesday</th>
             <th colSpan={4}>Wednesday</th>
@@ -128,7 +120,7 @@ function App() {
             <th colSpan={4}>Friday</th>
             <th colSpan={4}>Saturday</th>
           </tr>
-          <tr>
+          {/* <tr>
             <th>8:30 à 10:30</th>
             <th>10:30 à 12:30</th>
             <th>14:30 à 16:30</th>
@@ -153,7 +145,7 @@ function App() {
             <th>10:30 à 12:30</th>
             <th>14:30 à 16:30</th>
             <th>16:30 à 18:30</th>
-          </tr>
+          </tr> */}
         </thead>
         <tbody>
           {/* i will render this for each group */}
@@ -742,6 +734,54 @@ function App() {
       </table>
     </div>
   )
+}
+
+
+// actual App
+
+function Layout() {
+  return (
+    <div>
+
+    </div>
+  )
+}
+
+
+import { Routes, Route } from 'react-router-dom'
+
+
+import { useState } from 'react'
+import './App.css'
+import SideBar from './components/SideBar'
+import Sommaire from'./pages/Sommaire'
+function App() {
+  
+  return (
+    <>
+      <SideBar />
+      <Routes>
+        <Route path='/Gestion-Emploi-Temps' element={<Layout />} >
+          <Route path='sommaire' element={<Sommaire />} />
+        </Route>
+      </Routes>
+
+      <Router>
+        <div className="app">
+          <SideBar />
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Overview />} />
+              <Route path="/sommaire" element={<Overview />} />
+              <Route path="/archive" element={<Archive />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </Layout>
+        </div>
+      </Router>
+    </>
+  )
+  
 }
 
 export default App

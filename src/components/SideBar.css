@@ -1,0 +1,39 @@
+.sidebar {
+    border-right: 1.5px solid #eee;
+    width: 220px;
+    height: 100vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    & nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:100%;
+
+        ul {
+            padding: 0;
+            li {
+                border-radius: 5px;
+                margin: 10px 0;
+                padding: 5px 10px;
+                a {
+                    text-decoration: none;
+                    color: var(--link);
+
+                    span{
+                        margin-right: 7px;
+                    }
+                }
+            }
+            li.active {
+                background-color: #161616;
+                & a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
