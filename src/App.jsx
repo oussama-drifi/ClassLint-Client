@@ -736,52 +736,49 @@ function TableSchedule() {
   )
 }
 
-
 // actual App
 
-function Layout() {
-  return (
-    <div>
-
-    </div>
-  )
-}
 
 
-import { Routes, Route } from 'react-router-dom'
-
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom'
 
 import { useState } from 'react'
 import './App.css'
+
 import SideBar from './components/SideBar'
 import Sommaire from'./pages/Sommaire'
+import Emploi from './pages/Emploi'
+import Settings from './pages/Settings'
+import Archive from './pages/Archive'
+
+
+function Layout() {
+  return (
+    <div className='content'>
+      <Outlet />
+    </div>
+  )
+}
 function App() {
   
   return (
     <>
-      <SideBar />
-      <Routes>
-        <Route path='/Gestion-Emploi-Temps' element={<Layout />} >
-          <Route path='sommaire' element={<Sommaire />} />
-        </Route>
-      </Routes>
-
       <Router>
         <div className="app">
           <SideBar />
-          <Layout>
-            <Routes>
-              <Route path="/" element={<Overview />} />
-              <Route path="/sommaire" element={<Overview />} />
-              <Route path="/archive" element={<Archive />} />
-              <Route path="/settings" element={<Settings />} />
-            </Routes>
-          </Layout>
+          <Routes>
+            <Route path="/Gestion-Emploi-Temps" element={<Layout />} >
+              <Route index element={<Sommaire />} />
+              <Route path="sommaire" element={<Sommaire />} />
+              <Route path="emploi" element={<Emploi />} />
+              <Route path="archive" element={<Archive />} />
+              <Route path="settings" element={<Settings />} />
+            </Route>
+          </Routes>
         </div>
       </Router>
     </>
   )
-  
 }
 
 export default App

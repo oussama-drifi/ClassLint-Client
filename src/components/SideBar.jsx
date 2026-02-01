@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Logo from './logo_ofppt.png'
 import './SideBar.css'
+import { NavLink } from "react-router-dom";
+
 const SideBar = () => {
 
     return (
@@ -10,10 +12,38 @@ const SideBar = () => {
             </header>
             <nav>
                 <ul className="primary-links">
-                    <li className="active"><a href="#"><span><i className="bi bi-columns-gap"></i></span> Sommaire</a></li>
-                    <li><a href="#"><span><i className="bi bi-calendar2-week"></i></span> Emploi du Temps</a></li>
-                    <li><a href="#"><span><i className="bi bi-card-text"></i></span> Archieve</a></li>
-                    <li><a href="#"><span><i className="bi bi-gear"></i></span> Settings</a></li>
+                    <li>
+                        <NavLink 
+                            to='Gestion-Emploi-Temps/sommaire' 
+                            className={({isActive}) => isActive ? "active" : ""}
+                        >
+                            <span><i className="bi bi-columns-gap"></i></span> Sommaire
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
+                            to='Gestion-Emploi-Temps/emploi' 
+                            className={({isActive}) => isActive ? "active" : ""}
+                        >
+                            <span><i className="bi bi-calendar2-week"></i></span> Emploi du Temps
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
+                            to='Gestion-Emploi-Temps/archive' 
+                            className={({isActive}) => isActive ? "active" : ""}
+                        >
+                            <span><i className="bi bi-card-text"></i></span> Archieve
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
+                            to='Gestion-Emploi-Temps/settings'
+                            className={({isActive}) => isActive ? "active" : ""}
+                        >
+                            <span><i className="bi bi-gear"></i></span> Settings
+                        </NavLink>
+                    </li>
                 </ul>
 
                 <ul className="seconday-links">
