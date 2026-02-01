@@ -1,0 +1,90 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(0, 0, 255, 0);
+    &:hover {
+        height: 5px;
+    }
+}
+/* Track styling */
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 0, 0);
+    &:hover {
+        height: 5px;
+    }
+}
+/* Thumb styling */
+::-webkit-scrollbar-thumb {
+    /* background: #eeddff; */
+    background: #cbc7d0;
+    border-radius: 10px;
+}
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+    background: #b5b2b8;
+}
+
+.table-wrapper {
+    width: 100%;
+    max-height: 82vh;
+    overflow-y: auto;       /* enables BOTH x & y scroll */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.schedule-table {
+    width: 100%;
+    min-width: 1400px;     /* forces horizontal scroll */
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #e6e6e6;
+    padding: 8px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.schedule-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #f5f7fa;
+}
+.schedule-table thead th {
+    font-weight: 600;
+    background: #f5f7fa;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.schedule-table tbody td:first-child,
+.schedule-table thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 8;
+    background: #f5f7fa;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.schedule-table td:not(:first-child) {
+    min-width: 110px;
+    height: 48px;
+}
+
+.schedule-table td:empty {
+    background: #fcfcfc;
+    cursor: pointer;
+}
+
+.schedule-table td:empty:hover {
+    background: #faf3ff;
+}
+
+.schedule-table tbody tr:hover td {
+    background-color: #faf3ff;
+}

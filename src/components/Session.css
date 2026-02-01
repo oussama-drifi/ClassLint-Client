@@ -1,0 +1,40 @@
+.session {
+    border: 1.5px solid #eee;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px 5px 5px 14px;
+    position: relative;
+    color: #444;
+
+    & span i {
+        margin-right: 6px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+        width: 4px;
+        height: calc(100% - 5px);
+        border-radius: 6px;
+    }
+}
+
+.session.distanciel {
+    background-color: #f6ebff;
+    .hightlight {
+        color: #9000ff;
+        font-weight: 600;
+    }
+    &::before {
+        background-color: #9000ff;
+    }
+}
+.session.presentiel {
+    background-color: #f3f2f5be;
+    &::before {
+        background-color: #1e1e1e;
+    }
+}

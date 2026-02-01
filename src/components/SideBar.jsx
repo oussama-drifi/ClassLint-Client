@@ -41,7 +41,7 @@ const SideBar = () => {
                             to='Gestion-Emploi-Temps/settings'
                             className={({isActive}) => isActive ? "active" : ""}
                         >
-                            <span><i className="bi bi-gear"></i></span> Settings
+                            <span><i className="bi bi-gear"></i></span> Paramètres
                         </NavLink>
                     </li>
                 </ul>

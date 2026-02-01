@@ -15,8 +15,6 @@ a {
 }
 body {
   margin: 0;
-  /* display: flex; */
-  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--background);
@@ -25,8 +23,6 @@ body {
 * {
   font-family: "poppins";
 }
-
-
 
 .app {
   display: flex;
@@ -37,130 +33,20 @@ body {
 
   .content {
     border: 1.5px solid #eee;
-    border-radius: 4px;
+    border-radius: 7px;
     width: calc(100% - 230px);
     background-color: white;
+
+    & > div {
+      padding: 10px 0;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      & h1 {
+        color: #444;
+        margin-bottom: 10px;
+      }
+    }
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* start table styles */
-
-/* .table-wrapper {
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  border-radius: 8px;
-  border: 1px solid #e0e0e0;
-  background: #fff;
-}
-.schedule-table {
-  width: 100%;
-  min-width: 1400px; VERY important for big tables */
-  /* border-collapse: collapse;
-  font-size: 14px;
-} */
-
-/* .schedule-table th,
-.schedule-table td {
-  border: 1px solid #e6e6e6;
-  padding: 8px 6px;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-.schedule-table thead tr:first-child th {
-  background: #f5f7fa;
-  font-weight: 600;
-  font-size: 15px;
-}
-.schedule-table thead tr:nth-child(2) th {
-  background: #fafafa;
-  font-weight: 500;
-  font-size: 13px;
-}
-.schedule-table thead th {
-  position: sticky;
-  top: 0;
-  z-index: 3;
-} */
-/* .schedule-table tbody td:first-child,
-.schedule-table thead th:first-child {
-  position: sticky;
-  left: 0;
-  background: #f9fafb;
-  z-index: 4;
-  font-weight: 600;
-}
-.schedule-table td:not(:first-child) {
-  min-width: 120px;
-  height: 48px;
-}
-.schedule-table td:not(:empty) {
-  background: #e3f2fd;
-  border-color: #bbdefb;
-  font-weight: 500;
-}
-.schedule-table td:empty {
-  background: #fcfcfc;
-  cursor: pointer;
-} */
-
-/* .schedule-table td:empty:hover {
-  background: #f0f0f0;
-}
-.schedule-table tbody tr:hover td {
-  background-color: #f7faff;
-}
-.schedule-table td:focus-within {
-  outline: 2px solid #1976d2;
-  outline-offset: -2px;
-} */
-/* end table styles */
-
-/* ::-webkit-scrollbar {
-  width: 2px;
-  height: 2px;
-  background-color: transparent;
-  &:hover {
-    height: 5px;
-  }
-} */
-
-/* Track styling */
-/* ::-webkit-scrollbar-track {
-  background: transparent;
-  &:hover {
-    height: 5px;
-  }
-} */
-
-/* Thumb styling */
-/* ::-webkit-scrollbar-thumb {
-  background: #eeddff;
-  border-radius: 10px;
-
-  &:hover {
-    background: #0056b3;
-    height: 5px;
-  }
-} */
-
-/* Hover effect */
-/* ::-webkit-scrollbar-thumb:hover {
-  background: #0056b3;
-} */
