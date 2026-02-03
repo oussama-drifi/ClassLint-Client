@@ -1,8 +1,7 @@
 .sidebar {
-    border: 1.5px solid #eee;
-    border-radius: 7px;
-    width: 220px;
-    
+    border: 2.5px solid #eee;
+    border-radius: 15px;
+    width: 70px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -14,24 +13,35 @@
         justify-content: space-between;
         height:100%;
 
+        ul:first-child li:first-child span i {
+            font-size: 20px;
+        }
+
         ul {
-            padding: 0;
             li {
-                border-radius: 5px;
-                margin: 10px 0;
-                padding: 5px 10px;
+                border-radius: 12px;
+                /* padding: 5px 10px; */
+                margin-left: 3px;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
                 a {
                     text-decoration: none;
                     color: var(--link);
 
-                    span{
-                        margin-right: 7px;
+                    span i {
+                        font-size: 20px;
                     }
                 }
             }
             
             li:has(.active) {
                 background-color: #2e2e2e;
+                border: 2px solid rgb(255, 255, 255);
+                outline: 3px solid #2e2e2e;
                 & a {
                     color: white;
                 }

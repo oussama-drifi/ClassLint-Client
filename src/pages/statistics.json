@@ -1,0 +1,583 @@
+[
+    {
+        "groupId": 1,
+        "groupName": "FS-201",
+        "modules": [
+        {
+            "moduleName": "developpement frontend",
+            "totalHours": 100,
+            "usedHours": 100,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "culture et techniques avancé du numérique",
+            "totalHours": 30,
+            "usedHours": 30,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "préparation un projet web",
+            "totalHours": 50,
+            "usedHours": 45,
+            "remainingHours": 5,
+            "completionPercentage": 90.00
+        },
+        {
+            "moduleName": "approche agile",
+            "totalHours": 100,
+            "usedHours": 70,
+            "remainingHours": 30,
+            "completionPercentage": 70.00
+        },
+        {
+            "moduleName": "anglais technique",
+            "totalHours": 40,
+            "usedHours": 20,
+            "remainingHours": 20,
+            "completionPercentage": 50.00
+        },
+        {
+            "moduleName": "gestion des données",
+            "totalHours": 100,
+            "usedHours": 45,
+            "remainingHours": 55,
+            "completionPercentage": 45.00
+        },
+        {
+            "moduleName": "création une application cloud native",
+            "totalHours": 90,
+            "usedHours": 35,
+            "remainingHours": 55,
+            "completionPercentage": 38.89
+        },
+        {
+            "moduleName": "francais",
+            "totalHours": 65,
+            "usedHours": 25,
+            "remainingHours": 40,
+            "completionPercentage": 38.46
+        },
+        {
+            "moduleName": "projet synthèse",
+            "totalHours": 45,
+            "usedHours": 10,
+            "remainingHours": 35,
+            "completionPercentage": 22.22
+        },
+        {
+            "moduleName": "compétances comportementales",
+            "totalHours": 30,
+            "usedHours": 5,
+            "remainingHours": 25,
+            "completionPercentage": 16.67
+        },
+        {
+            "moduleName": "développement backend",
+            "totalHours": 100,
+            "usedHours": 10,
+            "remainingHours": 90,
+            "completionPercentage": 10.00
+        }
+        ]
+    },
+    {
+        "groupId": 2,
+        "groupName": "FS-202",
+        "modules": [
+        {
+            "moduleName": "culture et techniques avancé du numérique",
+            "totalHours": 30,
+            "usedHours": 30,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "compétances comportementales",
+            "totalHours": 30,
+            "usedHours": 30,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "préparation un projet web",
+            "totalHours": 50,
+            "usedHours": 50,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "developpement frontend",
+            "totalHours": 100,
+            "usedHours": 95,
+            "remainingHours": 5,
+            "completionPercentage": 95.00
+        },
+        {
+            "moduleName": "approche agile",
+            "totalHours": 100,
+            "usedHours": 70,
+            "remainingHours": 30,
+            "completionPercentage": 70.00
+        },
+        {
+            "moduleName": "création une application cloud native",
+            "totalHours": 90,
+            "usedHours": 60,
+            "remainingHours": 30,
+            "completionPercentage": 66.67
+        },
+        {
+            "moduleName": "francais",
+            "totalHours": 65,
+            "usedHours": 30,
+            "remainingHours": 35,
+            "completionPercentage": 46.15
+        },
+        {
+            "moduleName": "gestion des données",
+            "totalHours": 100,
+            "usedHours": 40,
+            "remainingHours": 60,
+            "completionPercentage": 40.00
+        },
+        {
+            "moduleName": "développement backend",
+            "totalHours": 100,
+            "usedHours": 30,
+            "remainingHours": 70,
+            "completionPercentage": 30.00
+        },
+        {
+            "moduleName": "anglais technique",
+            "totalHours": 40,
+            "usedHours": 10,
+            "remainingHours": 30,
+            "completionPercentage": 25.00
+        },
+        {
+            "moduleName": "projet synthèse",
+            "totalHours": 45,
+            "usedHours": 5,
+            "remainingHours": 40,
+            "completionPercentage": 11.11
+        }
+        ]
+    },
+    {
+        "groupId": 3,
+        "groupName": "FS-203",
+        "modules": [
+        {
+            "moduleName": "préparation un projet web",
+            "totalHours": 50,
+            "usedHours": 50,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "culture et techniques avancé du numérique",
+            "totalHours": 30,
+            "usedHours": 30,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "developpement frontend",
+            "totalHours": 100,
+            "usedHours": 80,
+            "remainingHours": 20,
+            "completionPercentage": 80.00
+        },
+        {
+            "moduleName": "approche agile",
+            "totalHours": 100,
+            "usedHours": 60,
+            "remainingHours": 40,
+            "completionPercentage": 60.00
+        },
+        {
+            "moduleName": "gestion des données",
+            "totalHours": 100,
+            "usedHours": 45,
+            "remainingHours": 55,
+            "completionPercentage": 45.00
+        },
+        {
+            "moduleName": "francais",
+            "totalHours": 65,
+            "usedHours": 25,
+            "remainingHours": 40,
+            "completionPercentage": 38.46
+        },
+        {
+            "moduleName": "projet synthèse",
+            "totalHours": 45,
+            "usedHours": 15,
+            "remainingHours": 30,
+            "completionPercentage": 33.33
+        },
+        {
+            "moduleName": "anglais technique",
+            "totalHours": 40,
+            "usedHours": 10,
+            "remainingHours": 30,
+            "completionPercentage": 25.00
+        },
+        {
+            "moduleName": "compétances comportementales",
+            "totalHours": 30,
+            "usedHours": 5,
+            "remainingHours": 25,
+            "completionPercentage": 16.67
+        },
+        {
+            "moduleName": "développement backend",
+            "totalHours": 100,
+            "usedHours": 10,
+            "remainingHours": 90,
+            "completionPercentage": 10.00
+        },
+        {
+            "moduleName": "création une application cloud native",
+            "totalHours": 90,
+            "usedHours": 5,
+            "remainingHours": 85,
+            "completionPercentage": 5.56
+        }
+        ]
+    },
+    {
+        "groupId": 4,
+        "groupName": "FS-204",
+        "modules": [
+        {
+            "moduleName": "préparation un projet web",
+            "totalHours": 50,
+            "usedHours": 50,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "developpement frontend",
+            "totalHours": 100,
+            "usedHours": 100,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "approche agile",
+            "totalHours": 100,
+            "usedHours": 100,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "culture et techniques avancé du numérique",
+            "totalHours": 30,
+            "usedHours": 30,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "francais",
+            "totalHours": 65,
+            "usedHours": 60,
+            "remainingHours": 5,
+            "completionPercentage": 92.31
+        },
+        {
+            "moduleName": "anglais technique",
+            "totalHours": 40,
+            "usedHours": 35,
+            "remainingHours": 5,
+            "completionPercentage": 87.50
+        },
+        {
+            "moduleName": "création une application cloud native",
+            "totalHours": 90,
+            "usedHours": 60,
+            "remainingHours": 30,
+            "completionPercentage": 66.67
+        },
+        {
+            "moduleName": "compétances comportementales",
+            "totalHours": 30,
+            "usedHours": 20,
+            "remainingHours": 10,
+            "completionPercentage": 66.67
+        },
+        {
+            "moduleName": "projet synthèse",
+            "totalHours": 45,
+            "usedHours": 25,
+            "remainingHours": 20,
+            "completionPercentage": 55.56
+        },
+        {
+            "moduleName": "développement backend",
+            "totalHours": 100,
+            "usedHours": 35,
+            "remainingHours": 65,
+            "completionPercentage": 35.00
+        },
+        {
+            "moduleName": "gestion des données",
+            "totalHours": 100,
+            "usedHours": 10,
+            "remainingHours": 90,
+            "completionPercentage": 10.00
+        }
+        ]
+    },
+    {
+        "groupId": 5,
+        "groupName": "FS-205",
+        "modules": [
+        {
+            "moduleName": "compétances comportementales",
+            "totalHours": 30,
+            "usedHours": 30,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "francais",
+            "totalHours": 65,
+            "usedHours": 65,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "culture et techniques avancé du numérique",
+            "totalHours": 30,
+            "usedHours": 30,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "approche agile",
+            "totalHours": 100,
+            "usedHours": 90,
+            "remainingHours": 10,
+            "completionPercentage": 90.00
+        },
+        {
+            "moduleName": "gestion des données",
+            "totalHours": 100,
+            "usedHours": 80,
+            "remainingHours": 20,
+            "completionPercentage": 80.00
+        },
+        {
+            "moduleName": "developpement frontend",
+            "totalHours": 100,
+            "usedHours": 75,
+            "remainingHours": 25,
+            "completionPercentage": 75.00
+        },
+        {
+            "moduleName": "développement backend",
+            "totalHours": 100,
+            "usedHours": 70,
+            "remainingHours": 30,
+            "completionPercentage": 70.00
+        },
+        {
+            "moduleName": "préparation un projet web",
+            "totalHours": 50,
+            "usedHours": 30,
+            "remainingHours": 20,
+            "completionPercentage": 60.00
+        },
+        {
+            "moduleName": "anglais technique",
+            "totalHours": 40,
+            "usedHours": 15,
+            "remainingHours": 25,
+            "completionPercentage": 37.50
+        },
+        {
+            "moduleName": "projet synthèse",
+            "totalHours": 45,
+            "usedHours": 10,
+            "remainingHours": 35,
+            "completionPercentage": 22.22
+        },
+        {
+            "moduleName": "création une application cloud native",
+            "totalHours": 90,
+            "usedHours": 10,
+            "remainingHours": 80,
+            "completionPercentage": 11.11
+        }
+        ]
+    },
+    {
+        "groupId": 6,
+        "groupName": "FS-206",
+        "modules": [
+        {
+            "moduleName": "approche agile",
+            "totalHours": 100,
+            "usedHours": 100,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "anglais technique",
+            "totalHours": 40,
+            "usedHours": 40,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "culture et techniques avancé du numérique",
+            "totalHours": 30,
+            "usedHours": 25,
+            "remainingHours": 5,
+            "completionPercentage": 83.33
+        },
+        {
+            "moduleName": "developpement frontend",
+            "totalHours": 100,
+            "usedHours": 80,
+            "remainingHours": 20,
+            "completionPercentage": 80.00
+        },
+        {
+            "moduleName": "compétances comportementales",
+            "totalHours": 30,
+            "usedHours": 20,
+            "remainingHours": 10,
+            "completionPercentage": 66.67
+        },
+        {
+            "moduleName": "préparation un projet web",
+            "totalHours": 50,
+            "usedHours": 30,
+            "remainingHours": 20,
+            "completionPercentage": 60.00
+        },
+        {
+            "moduleName": "gestion des données",
+            "totalHours": 100,
+            "usedHours": 50,
+            "remainingHours": 50,
+            "completionPercentage": 50.00
+        },
+        {
+            "moduleName": "création une application cloud native",
+            "totalHours": 90,
+            "usedHours": 45,
+            "remainingHours": 45,
+            "completionPercentage": 50.00
+        },
+        {
+            "moduleName": "développement backend",
+            "totalHours": 100,
+            "usedHours": 45,
+            "remainingHours": 55,
+            "completionPercentage": 45.00
+        },
+        {
+            "moduleName": "francais",
+            "totalHours": 65,
+            "usedHours": 25,
+            "remainingHours": 40,
+            "completionPercentage": 38.46
+        },
+        {
+            "moduleName": "projet synthèse",
+            "totalHours": 45,
+            "usedHours": 5,
+            "remainingHours": 40,
+            "completionPercentage": 11.11
+        }
+        ]
+    },
+    {
+        "groupId": 7,
+        "groupName": "FS-207",
+        "modules": [
+        {
+            "moduleName": "culture et techniques avancé du numérique",
+            "totalHours": 30,
+            "usedHours": 30,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "compétances comportementales",
+            "totalHours": 30,
+            "usedHours": 30,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "francais",
+            "totalHours": 65,
+            "usedHours": 65,
+            "remainingHours": 0,
+            "completionPercentage": 100.00
+        },
+        {
+            "moduleName": "approche agile",
+            "totalHours": 100,
+            "usedHours": 85,
+            "remainingHours": 15,
+            "completionPercentage": 85.00
+        },
+        {
+            "moduleName": "gestion des données",
+            "totalHours": 100,
+            "usedHours": 80,
+            "remainingHours": 20,
+            "completionPercentage": 80.00
+        },
+        {
+            "moduleName": "developpement frontend",
+            "totalHours": 100,
+            "usedHours": 75,
+            "remainingHours": 25,
+            "completionPercentage": 75.00
+        },
+        {
+            "moduleName": "développement backend",
+            "totalHours": 100,
+            "usedHours": 60,
+            "remainingHours": 40,
+            "completionPercentage": 60.00
+        },
+        {
+            "moduleName": "préparation un projet web",
+            "totalHours": 50,
+            "usedHours": 30,
+            "remainingHours": 20,
+            "completionPercentage": 60.00
+        },
+        {
+            "moduleName": "projet synthèse",
+            "totalHours": 45,
+            "usedHours": 25,
+            "remainingHours": 20,
+            "completionPercentage": 55.56
+        },
+        {
+            "moduleName": "anglais technique",
+            "totalHours": 40,
+            "usedHours": 15,
+            "remainingHours": 25,
+            "completionPercentage": 37.50
+        },
+        {
+            "moduleName": "création une application cloud native",
+            "totalHours": 90,
+            "usedHours": 10,
+            "remainingHours": 80,
+            "completionPercentage": 11.11
+        }
+        ]
+    }
+]

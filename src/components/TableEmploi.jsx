@@ -44,19 +44,37 @@ const TableEmploi = () => {
                 <td>
                     <Session type="distanciel" />
                 </td>
+                <td>
+                    <Session type="distanciel" />
+                </td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
                 <td></td>
-                <td><span className="session-chip physics">Frensh</span></td>
+                <td></td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td></td>
-                <td></td>
-                <td><span className="session-chip physics">Geography</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
+                <td>
+                    <Session type="distanciel" />
+                </td>
+                <td>
+                    <Session type="distanciel" />
+                </td>
             </tr>
             <tr>
                 {/* there are four sessions a day */}
@@ -76,20 +94,34 @@ const TableEmploi = () => {
                 <td>
                     <Session type="presentiel" />
                 </td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
+                <td>
+                    <Session type="distanciel" />
+                </td>
+                <td>
+                    <Session type="distanciel" />
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span className="session-chip physics">Frensh</span></td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
+                <td>
+                    <Session type="distanciel" />
+                </td>
                 <td></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -117,20 +149,20 @@ const TableEmploi = () => {
                 <td>
                     <Session type="distanciel" />
                 </td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span className="session-chip physics">Frensh</span></td>
                 <td></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -154,20 +186,32 @@ const TableEmploi = () => {
                 <td>
                     <Session type="presentiel" />
                 </td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span className="session-chip physics">Frensh</span></td>
+                <td>
+                    <Session type="distanciel" />
+                </td>
+                <td>
+                    <Session type="distanciel" />
+                </td>
                 <td></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
+                <td></td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
+                <td>
+                    <Session type="presentiel" />
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -191,20 +235,20 @@ const TableEmploi = () => {
                 <td>
                     <Session type="distanciel" />
                 </td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span className="session-chip physics">Frensh</span></td>
                 <td></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -224,22 +268,22 @@ const TableEmploi = () => {
                 <td>
                     <Session type="presentiel" />
                 </td>
-                <td><span className="session-chip physics">English</span></td>
-                <td><span className="session-chip physics">English</span></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Physics</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
-                <td><span className="session-chip physics">Geography</span></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><span className="session-chip physics">Frensh</span></td>
                 <td></td>
-                <td><span className="session-chip physics">Math</span></td>
-                <td><span className="session-chip physics">Math</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>

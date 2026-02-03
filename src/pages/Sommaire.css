@@ -1,0 +1,34 @@
+.groupes-statistics {
+    display: flex;
+    justify-content: space-between;
+    max-height: 80vh;
+    max-width: 100%;
+    overflow-y: auto;
+    flex-wrap: wrap;
+
+    .groupe-statistic {
+        width: 48.5%;
+        .groupe-name {
+            margin-bottom: 10px;
+        }
+    
+        .modules-table {
+            margin-bottom: 10px;
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+                border-radius: 10px;
+                max-width: 200px;
+
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+    
+            th {
+                background-color: #f2f2f2;
+            }
+        }
+    }
+}
