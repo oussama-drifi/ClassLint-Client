@@ -17,7 +17,7 @@ const Sommaire = () => {
                 setTimeout(() => {
                     setStatistics(res.data);
                     setIsLoading(false);
-                }, 1200);
+                }, 600);
             } catch (err) {
                 setErrMessage(err)
             }

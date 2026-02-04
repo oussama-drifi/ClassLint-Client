@@ -1,0 +1,340 @@
+[
+    {
+        "groupId": 1,
+        "groupName": "FS-201",
+        "sessions": {
+        "jeudi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "lundi": [
+            {
+            "formateur": "khaoutem",
+            "nom_module": "anglais technique",
+            "nom_salle": "Teams"
+            },
+            null,
+            {
+            "formateur": "meftah",
+            "nom_module": "comp\u00e9tances comportementales",
+            "nom_salle": "Teams"
+            },
+            null
+        ],
+        "mardi": [
+            null,
+            null,
+            {
+            "formateur": "khaoutem",
+            "nom_module": "anglais technique",
+            "nom_salle": "Teams"
+            },
+            null
+        ],
+        "mercredi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "samedi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "vendredi": [
+            null,
+            null,
+            null,
+            null
+        ]
+        }
+    },
+    {
+        "groupId": 2,
+        "groupName": "FS-202",
+        "sessions": {
+        "jeudi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "lundi": [
+            null,
+            {
+            "formateur": "sniny",
+            "nom_module": "arabe",
+            "nom_salle": "Teams"
+            },
+            {
+            "formateur": "meftah",
+            "nom_module": "comp\u00e9tances comportementales",
+            "nom_salle": "Teams"
+            },
+            null
+        ],
+        "mardi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "mercredi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "samedi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "vendredi": [
+            null,
+            null,
+            null,
+            null
+        ]
+        }
+    },
+    {
+        "groupId": 3,
+        "groupName": "FS-203",
+        "sessions": {
+        "jeudi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "lundi": [
+            null,
+            null,
+            null,
+            {
+            "formateur": "el khattabi",
+            "nom_module": "francais",
+            "nom_salle": "Teams"
+            }
+        ],
+        "mardi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "mercredi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "samedi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "vendredi": [
+            null,
+            null,
+            null,
+            null
+        ]
+        }
+    },
+    {
+        "groupId": 4,
+        "groupName": "FS-204",
+        "sessions": {
+        "jeudi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "lundi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "mardi": [
+            {
+            "formateur": "daoudi",
+            "nom_module": "approche agile",
+            "nom_salle": "Teams"
+            },
+            null,
+            null,
+            {
+            "formateur": "fentis",
+            "nom_module": "developpement frontend",
+            "nom_salle": "Teams"
+            }
+        ],
+        "mercredi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "samedi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "vendredi": [
+            null,
+            null,
+            null,
+            null
+        ]
+        }
+    },
+    {
+        "groupId": 5,
+        "groupName": "FS-205",
+        "sessions": {
+        "jeudi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "lundi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "mardi": [
+            {
+            "formateur": "daoudi",
+            "nom_module": "approche agile",
+            "nom_salle": "Teams"
+            },
+            null,
+            null,
+            null
+        ],
+        "mercredi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "samedi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "vendredi": [
+            null,
+            null,
+            null,
+            null
+        ]
+        }
+    },
+    {
+        "groupId": 6,
+        "groupName": "FS-206",
+        "sessions": {
+        "jeudi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "lundi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "mardi": [
+            {
+            "formateur": "daoudi",
+            "nom_module": "approche agile",
+            "nom_salle": "Teams"
+            },
+            null,
+            null,
+            null
+        ],
+        "mercredi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "samedi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "vendredi": [
+            null,
+            null,
+            null,
+            null
+        ]
+        }
+    },
+    {
+        "groupId": 7,
+        "groupName": "FS-207",
+        "sessions": {
+        "jeudi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "lundi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "mardi": [
+            null,
+            {
+            "formateur": "bouftass",
+            "nom_module": "cr\u00e9ation une application cloud native",
+            "nom_salle": "Teams"
+            },
+            null,
+            null
+        ],
+        "mercredi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "samedi": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "vendredi": [
+            null,
+            null,
+            null,
+            null
+        ]
+        }
+    }
+]

@@ -1,10 +1,5 @@
-// actual App
-
-
-
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom'
 
-import { useState } from 'react'
 import './App.css'
 
 import SideBar from './components/SideBar'
@@ -13,8 +8,8 @@ import Emploi from './pages/Emploi'
 import Settings from './pages/Settings'
 import Archive from './pages/Archive'
 
-import TableSchedule from './components/TableEmploi'
-import TableEmploi from './components/TableEmploi'
+// import TableSchedule from './components/TableEmploi'
+// import TableEmploi from './components/TableEmploi'
 function Layout() {
   return (
     <div className='content'>
@@ -22,6 +17,18 @@ function Layout() {
     </div>
   )
 }
+
+const AjouteSceance = () => {
+    return (
+        <div className='overlay'>
+            <div className="add-session-modal">
+              <h1>add session</h1>
+            </div>
+        </div>
+    )
+}
+
+
 function App() {
   
   return (
@@ -30,6 +37,7 @@ function App() {
       <Router>
         <div className="app">
           <SideBar />
+          {/* <AjouteSceance /> */}
           <Routes>
             <Route path="/Gestion-Emploi-Temps" element={<Layout />} >
               <Route index element={<Sommaire />} />
@@ -41,7 +49,6 @@ function App() {
           </Routes>
         </div>
       </Router>
-
     </>
   )
 }

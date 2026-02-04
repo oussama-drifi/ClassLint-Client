@@ -101,5 +101,4 @@ const TableSkeleton = () => {
         </div>
     )
 }
-
 export default TableSkeleton;

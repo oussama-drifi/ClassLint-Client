@@ -5,11 +5,17 @@ const GroupeStatistic = ({key, groupeName, modules}) => {
     modules.forEach(m => {
         totale += m.usedHours
     });
+    
     const progressionTotale = totale*100/750;
+
+    const styles = {
+        width: `${parseFloat(progressionTotale.toFixed(2))}%`
+    }
+
     return (
         <div key={key} className='groupe-statistic'>
             <div className="groupe-name">
-                <h2>{groupeName}</h2>
+                <h2>Developpement {groupeName}</h2>
             </div>
             <table className='modules-table'>
                 <thead>
@@ -40,7 +46,14 @@ const GroupeStatistic = ({key, groupeName, modules}) => {
                             grogression totale des modules
                         </td>
                         <td colSpan={4}>
-                            {parseFloat(progressionTotale.toFixed(2))} %
+                            <div>
+                                <div className='progress-bar'>
+                                    <span className='progress-fill' style={styles}></span>
+                                </div>
+                                <div>
+                                    <b>{parseFloat(progressionTotale.toFixed(2))} %</b>
+                                </div>
+                            </div>
                         </td>
                     </tr>
                 </tfoot>

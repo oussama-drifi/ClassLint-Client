@@ -36,7 +36,7 @@ const SideBar = () => {
                             to='Gestion-Emploi-Temps/archive' 
                             className={({isActive}) => isActive ? "active" : ""}
                         >
-                            <span><i className="bi bi-card-text"></i></span>
+                            <span><i className="bi bi-people"></i></span>
                         </NavLink>
                     </li>
                     <li>

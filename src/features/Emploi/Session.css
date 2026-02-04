@@ -1,10 +1,17 @@
 .session {
-    border: 1.5px solid #eee;
+    border: 2px solid #eee;
     width: fit-content;
     border-radius: 10px;
     padding: 5px 5px 5px 14px;
     position: relative;
     color: #444;
+    width: 200px;
+    
+    & ul li {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
     & span i {
         margin-right: 6px;

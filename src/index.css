@@ -30,6 +30,7 @@ body {
   height: 100vh;
   justify-content: space-between;
   padding: 10px;
+  position: relative;
 
   .content {
     border: 2.5px solid #eee;
@@ -63,4 +64,31 @@ body {
         background-color: #f1eef4;
     }
     
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+    z-index: 40;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-session-modal {
+    background-color: white;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 15px;
+    position: absolute;
+    width: 50%;
+    min-height: 65vh;
+    max-height: 80vh;
+    z-index: 20;
 }

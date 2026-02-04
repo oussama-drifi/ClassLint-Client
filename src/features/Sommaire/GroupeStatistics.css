@@ -29,6 +29,37 @@
             th {
                 background-color: #f2f2f2;
             }
+
+            td > div {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                
+                .progress-bar {
+                    width: 90%;
+                    background-color: #eae8ec;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    height: 12px;
+                    position: relative;
+        
+                    .progress-fill {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        /* width: 50%; */
+                        border-radius: 80px;
+                        background-color: #4e4e4e;
+                        transition: width 0.5s ease-in-out;
+                    }
+                }
+
+                & > div:last-child {
+                    margin-left: 7px;
+                }
+            }
+
         }
     }
 }
