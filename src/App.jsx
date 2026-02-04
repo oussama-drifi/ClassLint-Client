@@ -7,6 +7,7 @@ import Sommaire from'./pages/Sommaire'
 import Emploi from './pages/Emploi'
 import Settings from './pages/Settings'
 import Archive from './pages/Archive'
+import { useRef, useState, useEffect } from 'react'
 
 // import TableSchedule from './components/TableEmploi'
 // import TableEmploi from './components/TableEmploi'
@@ -18,18 +19,11 @@ function Layout() {
   )
 }
 
-const AjouteSceance = () => {
-    return (
-        <div className='overlay'>
-            <div className="add-session-modal">
-              <h1>add session</h1>
-            </div>
-        </div>
-    )
-}
-
+import AjouteSceance from './components/AddSessionModal'
 
 function App() {
+
+  const [isModalOpen, setIsModalOpen] = useState(true);
   
   return (
     <>
@@ -37,7 +31,9 @@ function App() {
       <Router>
         <div className="app">
           <SideBar />
-          {/* <AjouteSceance /> */}
+          {
+            isModalOpen && <AjouteSceance setIsModalOpen={setIsModalOpen} />
+          }
           <Routes>
             <Route path="/Gestion-Emploi-Temps" element={<Layout />} >
               <Route index element={<Sommaire />} />

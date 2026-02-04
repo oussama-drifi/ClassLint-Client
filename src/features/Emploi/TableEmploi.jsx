@@ -51,7 +51,7 @@ const TableEmploi = () => {
                                 s 
                                 ? 
                                 <td>
-                                    <Session num_sceance={i+1} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
                                 : <td><EmptySession /></td>
                             ))
@@ -61,7 +61,7 @@ const TableEmploi = () => {
                                 s 
                                 ?
                                 <td>
-                                    <Session num_sceance={i+1} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
                                 : <td><EmptySession /></td>
                             ))
@@ -71,7 +71,7 @@ const TableEmploi = () => {
                                 s 
                                 ?
                                 <td>
-                                    <Session num_sceance={i+1} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
                                 : <td><EmptySession /></td>
                             ))
@@ -81,7 +81,7 @@ const TableEmploi = () => {
                                 s 
                                 ?
                                 <td>
-                                    <Session num_sceance={i+1} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
                                 : <td><EmptySession /></td>
                             ))
@@ -91,7 +91,7 @@ const TableEmploi = () => {
                                 s 
                                 ?
                                 <td>
-                                    <Session num_sceance={i+1} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
                                 : <td><EmptySession /></td>
                             ))
@@ -101,7 +101,7 @@ const TableEmploi = () => {
                                 s
                                 ?
                                 <td>
-                                    <Session num_sceance={i+1} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td>
                                 : <td><EmptySession /></td>
                             ))
