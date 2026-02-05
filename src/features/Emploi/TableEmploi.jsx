@@ -3,28 +3,18 @@ import Session from './Session'
 import EmptySession from './EmptySession'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-
-
+import { useDispatch, useSelector } from 'react-redux'
+import { getSessionsState } from '../../selectors'
+import { fetchSessions } from '../../sessionsSlice'
 
 const TableEmploi = () => {
 
-    const [GroupsSessions, setGroupsSessions] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-    const [errMessage, setErrMessage] = useState(null);
+    const dispatch = useDispatch();
+
+    const {GroupsSessions, isLoading, error} = useSelector(getSessionsState);
 
     useEffect(() => {
-        const fetchGroupsSessions = async () => {
-            try {
-                const res = await axios.get("http://127.0.0.1:5000//api/emploi/1");
-                setTimeout(() => {
-                    setGroupsSessions(res.data);
-                    setIsLoading(false);
-                }, 200);
-            } catch (err) {
-                setErrMessage(err)
-            }
-        }
-        fetchGroupsSessions()
+        dispatch(fetchSessions(2))
     }, [])
 
     return (
@@ -50,60 +40,60 @@ const TableEmploi = () => {
                             g.sessions.Lundi.map((s, i) => (
                                 s 
                                 ? 
-                                <td>
+                                <td key={i}>
                                     <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
-                                : <td><EmptySession /></td>
+                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
                             ))
                         }
                         {
                             g.sessions.Mardi.map((s, i) => (
                                 s 
                                 ?
-                                <td>
+                                <td key={i}>
                                     <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
-                                : <td><EmptySession /></td>
+                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
                             ))
                         }
                         {
                             g.sessions.Mercredi.map((s, i) => (
                                 s 
                                 ?
-                                <td>
+                                <td key={i}>
                                     <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
-                                : <td><EmptySession /></td>
+                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
                             ))
                         }
                         {
                             g.sessions.Jeudi.map((s, i) => (
                                 s 
                                 ?
-                                <td>
+                                <td key={i}>
                                     <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
-                                : <td><EmptySession /></td>
+                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
                             ))
                         }
                         {
                             g.sessions.Vendredi.map((s, i) => (
                                 s 
                                 ?
-                                <td>
+                                <td key={i}>
                                     <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
-                                : <td><EmptySession /></td>
+                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
                             ))
                         }
                         {
                             g.sessions.Samedi.map((s, i) => (
                                 s
                                 ?
-                                <td>
+                                <td key={i}>
                                     <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td>
-                                : <td><EmptySession /></td>
+                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
                             ))
                         }
                     </tr>

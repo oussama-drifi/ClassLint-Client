@@ -6,6 +6,7 @@
     position: relative;
     color: #444;
     width: 200px;
+    height: 100%;
     
     & ul li {
         white-space: nowrap;
@@ -44,4 +45,10 @@
     &::before {
         background-color: #1e1e1e;
     }
+}
+
+.session.skeleton-session {
+    background-color: #d04646;
+    color: transparent;
+    pointer-events: none;
 }

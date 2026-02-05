@@ -1,16 +1,25 @@
 import { useEffect, useRef, useState } from 'react'
 import './selectMenu.css'
 
-const SelectMenu = ({options}) => {
-    const [isOptionSelected, setIsOptionSelected] = useState(false)
+const SelectMenu = ({options, refetch}) => {
+    const [isOptionSelected, setIsOptionSelected] = useState(false);
     const [isShown, setIsShown] = useState(false);
     const [selectedOption, setSelectedOption] = useState("select option");
-    const [focusedIndex, setFocusedIndex] = useState(-1);
+
+    const valRef = useRef(null);
+
+    useEffect(() => {
+        valRef.current = selectedOption;
+    }, []);
 
     // toggle options menu
-    const handleChange = (option) => {
-        setIsOptionSelected(true)
-        setSelectedOption(option);
+    const handleChange = (option, index) => {
+        if (valRef.current !== option) {
+            setSelectedOption(option);
+            valRef.current = option;
+            refetch(index+1);
+        }
+        setIsOptionSelected(true);
         setIsShown(prev => !prev);
         buttonRef.current?.focus();
     }
@@ -33,13 +42,6 @@ const SelectMenu = ({options}) => {
         }
     }, [])
 
-    useEffect(() => {
-        if (isShown && focusedIndex >= 0) {
-        const el = optionsRef.current?.children[focusedIndex];
-        el?.focus();
-        }
-    }, [focusedIndex, isShown]);
-
     return (
         <div className={`select-wrapper ${isOptionSelected ? "selected" : ""}`} ref={wrapperRef}>
             <input 
@@ -58,9 +60,9 @@ const SelectMenu = ({options}) => {
                 ref={optionsRef}
             >
                 {
-                    options.map(option => (
+                    options.map((option, index) => (
                         <li key={option}
-                            onClick={() => handleChange(option)}
+                            onClick={() => handleChange(option, index)}
                         >{option}</li>
                     ))
                 }

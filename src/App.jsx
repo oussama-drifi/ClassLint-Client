@@ -9,8 +9,7 @@ import Settings from './pages/Settings'
 import Archive from './pages/Archive'
 import { useRef, useState, useEffect } from 'react'
 
-// import TableSchedule from './components/TableEmploi'
-// import TableEmploi from './components/TableEmploi'
+
 function Layout() {
   return (
     <div className='content'>
@@ -19,20 +18,22 @@ function Layout() {
   )
 }
 
+import { getSessionDetails } from './selectors'
+import { useSelector } from 'react-redux'; 
+
 import AjouteSceance from './components/AddSessionModal'
 
 function App() {
 
-  const [isModalOpen, setIsModalOpen] = useState(true);
-  
+  const {isModalOpen} = useSelector(getSessionDetails);
+
   return (
     <>
-    {/* <TableEmploi /> */}
       <Router>
         <div className="app">
           <SideBar />
           {
-            isModalOpen && <AjouteSceance setIsModalOpen={setIsModalOpen} />
+            isModalOpen && <AjouteSceance />
           }
           <Routes>
             <Route path="/Gestion-Emploi-Temps" element={<Layout />} >
