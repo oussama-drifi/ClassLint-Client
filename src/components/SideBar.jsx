@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import Logo from './logo_ofppt.png'
-import './SideBar.css'
+import './SideBar.css';
 import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
 
     return (
         <aside className="sidebar">
-            {/* <header>
-                <h2>L</h2>
-            </header> */}
             <nav>
                 <ul className="primary-links">
                     <li>
@@ -41,7 +38,7 @@ const SideBar = () => {
                     </li>
                     <li>
                         <NavLink 
-                            to='Gestion-Emploi-Temps/settings'
+                            to='Gestion-Emploi-Temps/ajouter'
                             className={({isActive}) => isActive ? "active" : ""}
                         >
                             <span><i className="bi bi-plus-lg"></i></span>

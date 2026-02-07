@@ -7,6 +7,7 @@ import Sommaire from'./pages/Sommaire'
 import Emploi from './pages/Emploi'
 import Settings from './pages/Settings'
 import Archive from './pages/Archive'
+import Ajouter from './pages/Ajouter'
 import { useRef, useState, useEffect } from 'react'
 
 
@@ -41,6 +42,7 @@ function App() {
               <Route path="sommaire" element={<Sommaire />} />
               <Route path="emploi" element={<Emploi />} />
               <Route path="archive" element={<Archive />} />
+              <Route path="ajouter" element={<Ajouter />} />
               <Route path="settings" element={<Settings />} />
             </Route>
           </Routes>
