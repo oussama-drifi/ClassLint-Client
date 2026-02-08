@@ -1,0 +1,27 @@
+import { Routes, Route, Outlet, Navigate } from 'react-router-dom'
+// pages
+import AddNewPage from '../pages/AddNew/AddNewPage'
+import SummaryPage from '../pages/Summary/SummaryPage'
+import SchedulePage from '../pages/Schedule/SchedulePage'
+import SettingsPage from '../pages/Settings/SettingsPage'
+
+function Layout() {
+    return (
+        <div className='content'>
+        <Outlet />
+        </div>
+    )
+}
+export const AppRoutes = () => {
+    return (
+        <Routes>
+            <Route path="/Gestion-Emploi-Temps" element={<Layout />} >
+                <Route index element={<Navigate to="sommaire" replace />} />
+                <Route path="sommaire" element={<SummaryPage />} />
+                <Route path="emploi" element={<SchedulePage />} />
+                <Route path="ajouter" element={<AddNewPage />} />
+                <Route path="paramètres" element={<SettingsPage />} />
+            </Route>
+        </Routes>
+    )
+}

@@ -14,3 +14,4 @@ const EmptySession = ({num_sceance, groupId}) => {
 }
 
 export default EmptySession
+

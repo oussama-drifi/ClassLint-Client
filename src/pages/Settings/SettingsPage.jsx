@@ -1,6 +1,6 @@
 import React from 'react'
-
-const Settings = () => {
+import './SettingsPage.css'
+const SettingsPage = () => {
     return (
         <div>
             <h1>Paramètres</h1>
@@ -9,4 +9,4 @@ const Settings = () => {
     )
 }
 
-export default Settings
+export default SettingsPage

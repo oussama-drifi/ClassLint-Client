@@ -1,20 +1,20 @@
-import TableEmploi from '../../features/Schedule/TableEmploi'
-import SelectMenu from '../../components/selectMenu/selectMenu'
-import './Schedule.css'
+import './SchedulePageHeader.css'
+import SelectMenu from '../../../../components/selectMenu/selectMenu'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useDispatch } from 'react-redux'
-import { fetchSessions } from '../../app/slices/sessionsSlice'
+import { useDispatch, useSelector } from 'react-redux'
+// import { fetchSessions } from '../../../app/slices/sessionsSlice'
 
-const Schedule = () => {
+
+const SchedulePageHeader = () => {
 
     const dispatch = useDispatch();
 
-    const refetch = (week_id) => {
-        dispatch(fetchSessions(week_id))
-    }
+    // const refetch = (week_id) => {
+    //     dispatch(fetchSessions(week_id))
+    // }
 
-    const [weeks, setWeeks] = useState([])
+    const [weeks, setWeeks] = useState([]);
 
     const getFormatedDate = (datetime) => {
         const date = new Date(datetime);
@@ -29,18 +29,14 @@ const Schedule = () => {
         axios.get(`http://127.0.0.1:5000//api/semaines`).then((res) => setWeeks(res.data))
     }, [])
 
-
     const options = weeks.map(w => `${w.titre} - ${getFormatedDate(w.date_debut)}`)
 
     return (
-        <div>
-            <div className='emploi-page-header'>
-                <h1>Emploi Du Semaine</h1>
-                <SelectMenu options={options} refetch={refetch}/>
-            </div>
-            <TableEmploi />
+        <div className='emploi-page-header'>
+            <h1>Emploi Du Semaine</h1>
+            <SelectMenu options={options} />
         </div>
     )
 }
 
-export default Schedule
+export default SchedulePageHeader

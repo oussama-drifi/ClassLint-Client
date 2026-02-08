@@ -4,7 +4,7 @@ import TableSkeleton from '../../features/Summary/components/Skeleton/TableSkele
 import GroupeStatistics from '../../features/Summary/components/GroupStatistics/GroupStatistics'
 
 
-const Summary = () => {
+const SummaryPage = () => {
 
     const [statistics, setStatistics] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -50,4 +50,4 @@ const Summary = () => {
     )
 }
 
-export default Summary
+export default SummaryPage
