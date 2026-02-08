@@ -2,17 +2,17 @@ import './SchedulePageHeader.css'
 import SelectMenu from '../../../../components/selectMenu/selectMenu'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useDispatch, useSelector } from 'react-redux'
-// import { fetchSessions } from '../../../app/slices/sessionsSlice'
+import { useDispatch } from 'react-redux'
+import { fetchSessions } from '../../../../app/slices/sessionsSlice'
 
 
 const SchedulePageHeader = () => {
 
     const dispatch = useDispatch();
 
-    // const refetch = (week_id) => {
-    //     dispatch(fetchSessions(week_id))
-    // }
+    const refetch = (week_id) => {
+        dispatch(fetchSessions(week_id))
+    }
 
     const [weeks, setWeeks] = useState([]);
 
@@ -34,7 +34,7 @@ const SchedulePageHeader = () => {
     return (
         <div className='emploi-page-header'>
             <h1>Emploi Du Semaine</h1>
-            <SelectMenu options={options} />
+            <SelectMenu options={options} refetch={refetch}/>
         </div>
     )
 }

@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import './AddSessionModal.css'
 import SelectMenu from "../../../../components/selectMenu/selectMenu";
 import { useDispatch } from "react-redux";
-import { openModal, closeModal } from "../../../../app/slices/addSessionSlice";
+import { openModal, closeModal } from "../../../app/slices/addSessionSlice";
 
 const AddSessionModal = () => {
 
