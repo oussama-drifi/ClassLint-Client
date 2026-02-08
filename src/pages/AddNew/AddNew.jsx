@@ -1,6 +1,8 @@
 import React from 'react'
+import './AddNew.css'
 
-const Ajouter = () => {
+
+const AddNew = () => {
     return (
         <div>
             <h1>Ajouter</h1>
@@ -9,4 +11,4 @@ const Ajouter = () => {
     )
 }
 
-export default Ajouter
+export default AddNew

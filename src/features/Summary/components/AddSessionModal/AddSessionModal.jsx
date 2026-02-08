@@ -1,10 +1,10 @@
-import { useEffect, useId, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import './AddSessionModal.css'
-import SelectMenu from "./selectMenu/selectMenu";
+import SelectMenu from "../../../../components/selectMenu/selectMenu";
 import { useDispatch } from "react-redux";
-import { openModal, closeModal } from "../addSessionSlice";
+import { openModal, closeModal } from "../../../../app/slices/addSessionSlice";
 
-const AjouteSceance = () => {
+const AddSessionModal = () => {
 
     const dispatch = useDispatch()
 
@@ -45,4 +45,4 @@ const AjouteSceance = () => {
     )
 }
 
-export default AjouteSceance
+export default AddSessionModal

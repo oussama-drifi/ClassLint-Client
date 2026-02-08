@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
-import TableSkeleton from '../features/Sommaire/TableSkeleton'
-import GroupeStatistics from '../features/Sommaire/GroupeStatistics'
+import TableSkeleton from '../../features/Summary/components/Skeleton/TableSkeleton'
+import GroupeStatistics from '../../features/Summary/components/GroupStatistics/GroupStatistics'
 
 
-const Sommaire = () => {
+const Summary = () => {
 
     const [statistics, setStatistics] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -50,4 +50,4 @@ const Sommaire = () => {
     )
 }
 
-export default Sommaire
+export default Summary

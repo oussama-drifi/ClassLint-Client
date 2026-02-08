@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from './logo_ofppt.png'
 import './SideBar.css';
 import { NavLink } from "react-router-dom";
 

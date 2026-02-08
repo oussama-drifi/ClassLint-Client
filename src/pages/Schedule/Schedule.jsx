@@ -1,12 +1,12 @@
-import TableEmploi from '../features/Emploi/TableEmploi'
-import SelectMenu from '../components/selectMenu/selectMenu'
-import './Emploi.css'
+import TableEmploi from '../../features/Schedule/TableEmploi'
+import SelectMenu from '../../components/selectMenu/selectMenu'
+import './Schedule.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useDispatch } from 'react-redux'
-import { fetchSessions } from '../sessionsSlice'
+import { fetchSessions } from '../../app/slices/sessionsSlice'
 
-const Emploi = () => {
+const Schedule = () => {
 
     const dispatch = useDispatch();
 
@@ -43,4 +43,4 @@ const Emploi = () => {
     )
 }
 
-export default Emploi
+export default Schedule

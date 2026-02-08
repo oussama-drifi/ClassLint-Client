@@ -1,15 +1,15 @@
-import './GroupeStatistics.css'
+import './GroupStatistics.css'
 
-const GroupeStatistic = ({key, groupeName, modules}) => {
+const GroupStatistic = ({key, groupeName, modules}) => {
     let totale = 0;
     modules.forEach(m => {
-        totale += m.usedHours
+        totale += m.usedHours;
     });
     
-    const progressionTotale = totale*100/750;
+    const totalProgression = totale*100/750;
 
     const styles = {
-        width: `${parseFloat(progressionTotale.toFixed(2))}%`
+        width: `${parseFloat(totalProgression.toFixed(2))}%`
     }
 
     return (
@@ -51,7 +51,7 @@ const GroupeStatistic = ({key, groupeName, modules}) => {
                                     <span className='progress-fill' style={styles}></span>
                                 </div>
                                 <div>
-                                    <b>{parseFloat(progressionTotale.toFixed(2))} %</b>
+                                    <b>{parseFloat(totalProgression.toFixed(2))} %</b>
                                 </div>
                             </div>
                         </td>
@@ -63,4 +63,4 @@ const GroupeStatistic = ({key, groupeName, modules}) => {
     )
 }
 
-export default GroupeStatistic
+export default GroupStatistic

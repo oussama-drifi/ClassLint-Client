@@ -1,6 +1,6 @@
 import './EmptySession.css'
 import { useDispatch } from 'react-redux'
-import { openModal } from '../../addSessionSlice'
+import { openModal } from '../../app/slices/addSessionSlice'
 
 const EmptySession = ({num_sceance, groupId}) => {
     const dispatch = useDispatch()
