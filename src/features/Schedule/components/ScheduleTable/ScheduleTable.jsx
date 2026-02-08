@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getSessionsState } from '@/app/selectors/selectors'
 import { fetchSessions } from '@/app/slices/sessionsSlice'
+// components
 import Session from '../Session'
 import EmptySession from '../EmptySession'
 
