@@ -1,12 +1,12 @@
-import './TableEmploi.css'
-import Session from './Session'
-import EmptySession from './components/EmptySession/EmptySession'
+import './ScheduleTable.css'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getSessionsState } from '../../app/selectors/selectors'
-import { fetchSessions } from '../../app/slices/sessionsSlice'
+import { getSessionsState } from '@/app/selectors/selectors'
+import { fetchSessions } from '@/app/slices/sessionsSlice'
+import Session from '../Session'
+import EmptySession from '../EmptySession'
 
-const TableEmploi = () => {
+const ScheduleTable = () => {
 
     const dispatch = useDispatch();
 
@@ -104,4 +104,4 @@ const TableEmploi = () => {
     )
 }
 
-export default TableEmploi
+export default ScheduleTable

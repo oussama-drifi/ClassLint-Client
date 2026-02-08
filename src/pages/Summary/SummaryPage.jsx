@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import TableSkeleton from '../../features/Summary/components/Skeleton/TableSkeleton'
-import GroupeStatistics from '../../features/Summary/components/GroupStatistics/GroupStatistics'
-
+import TableSkeleton from '@/features/Summary/components/Skeleton/TableSkeleton'
+import GroupeStatistics from '@/features/Summary/components/GroupStatistics/GroupStatistics'
 
 const SummaryPage = () => {
 
@@ -22,7 +21,7 @@ const SummaryPage = () => {
                 setErrMessage(err)
             }
         }
-        fetchGrouprsProgress()
+        fetchGrouprsProgress();
     }, []);
 
     return (

@@ -1,9 +1,9 @@
 import './SchedulePage.css'
-import TableEmploi from '../../features/Schedule/TableEmploi'
-import AddSessionModal from '../../features/Schedule/components/AddSessionModal/AddSessionModal'
-import { getSessionDetails } from '../../app/selectors/selectors'
 import { useSelector } from 'react-redux'
-import SchedulePageHeader from '../../features/Schedule/components/PageHeader/SchedulePageHeader'
+import AddSessionModal from '@/features/Schedule/components/AddSessionModal'
+import SchedulePageHeader from '@/features/Schedule/components/PageHeader'
+import { getSessionDetails } from '@/app/selectors/selectors'
+import ScheduleTable from '@/features/Schedule/components/ScheduleTable/ScheduleTable'
 
 const SchedulePage = () => {
 
@@ -13,7 +13,7 @@ const SchedulePage = () => {
         <>
             <div>
                 <SchedulePageHeader />
-                <TableEmploi />
+                <ScheduleTable />
             </div>
             {
                 isModalOpen && <AddSessionModal />
