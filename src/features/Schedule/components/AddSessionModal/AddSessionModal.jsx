@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import SelectMenu from "@/components/selectMenu/selectMenu";
 import { closeModal } from "@/app/slices/addSessionSlice";
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 const AddSessionModal = () => {
 
     const dispatch = useDispatch()
@@ -13,17 +13,17 @@ const AddSessionModal = () => {
     const modalRef = useRef(null);
     const closeButtonRef = useRef(null);
 
-    useEffect(() => {
-        const closeMenuOnOuterClick = (e) => {
-            if(closeButtonRef.current && !modalRef.current.contains(e.target)){
-                dispatch(closeModal())
-            }
-        }
-        document.addEventListener('click', closeMenuOnOuterClick)
-        return () => {
-            document.removeEventListener('click', closeMenuOnOuterClick)
-        }
-    }, [])
+    // useEffect(() => {
+    //     const closeMenuOnOuterClick = (e) => {
+    //         if(closeButtonRef.current && !modalRef.current.contains(e.target)){
+    //             dispatch(closeModal())
+    //         }
+    //     }
+    //     document.addEventListener('click', closeMenuOnOuterClick)
+    //     return () => {
+    //         document.removeEventListener('click', closeMenuOnOuterClick)
+    //     }
+    // }, [])
 
     const onFormSublit = (e) => {
         e.preventDefault();
