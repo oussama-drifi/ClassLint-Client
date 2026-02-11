@@ -5,25 +5,6 @@ import GroupeStatistics from '@/features/Summary/components/GroupStatistics/Grou
 
 const SummaryPage = () => {
 
-    const [statistics, setStatistics] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-    const [errMessage, setErrMessage] = useState(null);
-
-    useEffect(() => {
-        const fetchGrouprsProgress = async () => {
-            try {
-                const res = await axios.get("http://127.0.0.1:5000/api/progress");
-                setTimeout(() => {
-                    setStatistics(res.data);
-                    setIsLoading(false);
-                }, 600);
-            } catch (err) {
-                setErrMessage(err)
-            }
-        }
-        fetchGrouprsProgress();
-    }, []);
-
     return (
         <div className='sommaire'>
             <h1>Sommaire</h1>

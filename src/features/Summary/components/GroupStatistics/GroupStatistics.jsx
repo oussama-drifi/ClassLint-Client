@@ -58,7 +58,6 @@ const GroupStatistic = ({key, groupeName, modules}) => {
                     </tr>
                 </tfoot>
             </table>
-
         </div>
     )
 }
