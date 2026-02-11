@@ -70,18 +70,18 @@ const SessionsSlice = createSlice({
             state.error = action.payload || "Something wrong";
         })
 
-        .addCase(createSession.pending, (state) => {
-            state.isLoading = true;
-            state.error = null;
-        })
-        .addCase(createSession.fulfilled, (state, action) => {
-            state.isLoading = false;
-            // state.data.push(action.payload);
-        })
-        .addCase(createSession.rejected, (state, action) => {
-            state.isLoading = false;
-            state.error = action.payload;
-        });
+        // .addCase(createSession.pending, (state) => {
+        //     state.isLoading = true;
+        //     state.error = null;
+        // })
+        // .addCase(createSession.fulfilled, (state, action) => {
+        //     state.isLoading = false;
+        //     // state.data.push(action.payload);
+        // })
+        // .addCase(createSession.rejected, (state, action) => {
+        //     state.isLoading = false;
+        //     state.error = action.payload;
+        // });
     },
 })
 

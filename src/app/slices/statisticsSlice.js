@@ -1,16 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-export const fetchSessions = createAsyncThunk(
+export const fetchStatistics = createAsyncThunk(
     "statistics/fetchStatistics",
     async (_, thunkAPI) => {
         try {
+            console.log("fetching data")
             const res = await fetch(`http://127.0.0.1:5000/api/progress`);
             if (!res.ok) {
                 throw new Error("Failed to fetch statistics");
             }
             const data = await res.json();
-            return data; 
+            await new Promise(res => setTimeout(res, 600));
+            return data;
         } catch (error) {
             return thunkAPI.rejectWithValue(error.message);
         }
