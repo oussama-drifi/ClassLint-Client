@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
-import axios from 'axios'
 import TableSkeleton from '@/features/Summary/components/Skeleton/TableSkeleton'
-import GroupeStatistics from '@/features/Summary/components/GroupStatistics/GroupStatistics'
+import { useSelector } from 'react-redux'
+import GroupsStatistics from '@/features/Summary/components/GroupsStatistics/GroupsStatistics'
 
 const SummaryPage = () => {
+
+    const {isLoading} = useSelector(state => state.statistics.statistics)
 
     return (
         <div className='sommaire'>
@@ -16,13 +17,7 @@ const SummaryPage = () => {
                             <TableSkeleton />
                         </>
                     ) : (
-                        statistics.map(s => (
-                            <GroupeStatistics
-                                key={s.groupeId} 
-                                groupeName={s.groupName}
-                                modules={s.modules}
-                            />
-                        ))
+                        <GroupsStatistics />
                     )
                 }
             </div>

@@ -17,32 +17,31 @@ export const fetchSessions = createAsyncThunk(
     }
 );
 
-export const createSession = createAsyncThunk(
-    "sessions/createSession",
+// export const createSession = createAsyncThunk(
+//     "sessions/createSession",
+//     async (newSession, thunkAPI) => {
+//         try {
+//         const res = await fetch("", {
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json",
+//             },
+//             body: JSON.stringify(newSession),
+//         });
 
-    async (newSession, thunkAPI) => {
-        try {
-        const res = await fetch("", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(newSession),
-        });
+//         if (!res.ok) {
+//             const errorData = await res.json();
+//             return thunkAPI.rejectWithValue(errorData.message || "faild");
+//         }
 
-        if (!res.ok) {
-            const errorData = await res.json();
-            return thunkAPI.rejectWithValue(errorData.message || "faild");
-        }
+//         const data = await res.json();
+//         return data;
 
-        const data = await res.json();
-        return data;
-
-        } catch (error) {
-            return thunkAPI.rejectWithValue(error.message);
-        }
-    }
-);
+//         } catch (error) {
+//             return thunkAPI.rejectWithValue(error.message);
+//         }
+//     }
+// );
 
 const initialState = {
     GroupsSessions: [],
