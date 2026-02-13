@@ -7,17 +7,18 @@ import { fetchStatistics } from '@/app/slices/statisticsSlice'
 
 const SummaryPage = () => {
 
+    const dispatch = useDispatch()
+
     const {isLoading} = useSelector(state => state.statistics)
 
-    const dispatch = useDispatch()
     useEffect(() => {
         dispatch(fetchStatistics())
     }, []);
 
     return (
-        <div className='sommaire'>
+        <div className='summary'>
             <h1>Sommaire</h1>
-            <div className="groupes-statistics">
+            <div className="groups-statistics">
                 {
                     isLoading ? (
                         <>

@@ -8,14 +8,8 @@ import Session from '../Session'
 import EmptySession from '../EmptySession'
 
 const ScheduleTable = () => {
-
-    const dispatch = useDispatch();
-
-    const {GroupsSessions, isLoading, error} = useSelector(getSessionsState);
-
-    useEffect(() => {
-        dispatch(fetchSessions(2))
-    }, [])
+    
+    const { GroupsSessions } = useSelector(getSessionsState);
 
     return (
     <div className='table-wrapper'>

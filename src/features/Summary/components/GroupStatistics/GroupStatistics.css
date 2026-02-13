@@ -1,4 +1,4 @@
-.groupes-statistics {
+.groups-statistics {
     display: flex;
     justify-content: space-between;
     max-height: 80vh;
@@ -6,9 +6,9 @@
     overflow-y: auto;
     flex-wrap: wrap;
 
-    .groupe-statistic {
+    .group-statistic {
         width: 50%;
-        .groupe-name {
+        .group-name {
             margin-bottom: 10px;
         }
     

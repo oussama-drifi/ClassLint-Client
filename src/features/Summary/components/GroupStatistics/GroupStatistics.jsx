@@ -13,8 +13,8 @@ const GroupStatistic = ({key, groupeName, modules}) => {
     }
 
     return (
-        <div key={key} className='groupe-statistic'>
-            <div className="groupe-name">
+        <div key={key} className='group-statistic'>
+            <div className="group-name">
                 <h2>Developpement {groupeName}</h2>
             </div>
             <table className='modules-table'>
