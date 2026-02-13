@@ -11,7 +11,7 @@ export const fetchStatistics = createAsyncThunk(
                 throw new Error("Failed to fetch statistics");
             }
             const data = await res.json();
-            await new Promise(res => setTimeout(res, 600));
+            await new Promise(res => setTimeout(res, 600)); // simulate the dellay
             return data;
         } catch (error) {
             return thunkAPI.rejectWithValue(error.message);
