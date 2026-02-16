@@ -17,9 +17,8 @@
     border: 2px solid #eee;
     border-radius: 15px;
     position: absolute;
-    width: 50%;
-    min-height: 65vh;
-    max-height: 80vh;
+    width: 600px;
+    height: 300px;
     z-index: 20;
     animation: grow 0.2s ease;
 
@@ -44,6 +43,37 @@
         &:hover {
             background-color: #f1eff3;
 
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+
+        .form-group {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .select-wrapper {
+                width: 49.5%;
+            }
+        }
+
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #353535;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.25s ease;
+
+            &:hover {
+                background-color: #515151;
+            }
         }
     }
 }

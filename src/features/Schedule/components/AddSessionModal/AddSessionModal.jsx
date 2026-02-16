@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import SelectMenu from "@/components/selectMenu/selectMenu";
 import { closeModal } from "@/app/slices/addSessionSlice";
 // import { useEffect } from 'react';
+
 const AddSessionModal = () => {
 
     const dispatch = useDispatch()
@@ -33,12 +34,17 @@ const AddSessionModal = () => {
         <div className='overlay'>
             <div className="add-session-modal" ref={modalRef}>
                 <button className="close-modal-btn" ref={closeButtonRef} onClick={() => dispatch(closeModal())}><i className="bi bi-x-lg"></i></button>
-                <h1>Ajouter une Séance</h1>
+                <h2>Ajouter une Séance</h2>
                 <form onSubmit={onFormSublit}>
-                    <SelectMenu options={['alami', 'hakiki', 'haqay', 'ascour', 'brinsi', 'el omari', 'essoufiani']}/>
-                    <SelectMenu options={['SP-1', 'SP-2', 'SC-10', 'SP-4', 'SP-8', 'LAB-3']}/>
-                    <SelectMenu options={['developpement frontend', 'developpement backend', 'genstion des données', 'projet web', 'approche agile']}/>
-                    <button type="submit">ajouter Séance</button>
+                    <div className='form-group'>
+                        <SelectMenu options={['alami', 'hakiki', 'haqay', 'ascour', 'brinsi', 'el omari', 'essoufiani']}/>
+                        <SelectMenu options={['SP-1', 'SP-2', 'SC-10', 'SP-4', 'SP-8', 'LAB-3']}/>
+                    </div>
+                    <div className='form-group'>
+                        <SelectMenu options={['developpement frontend', 'developpement backend', 'genstion des données', 'projet web', 'approche agile']}/>
+                        <SelectMenu options={['developpement frontend', 'developpement backend', 'genstion des données', 'projet web', 'approche agile']}/>
+                    </div>
+                    <button type="submit" className='submit-btn'>ajouter Séance</button>
                 </form>
             </div>
         </div>
