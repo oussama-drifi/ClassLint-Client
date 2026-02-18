@@ -29,7 +29,7 @@ const SideBar = () => {
                     </li>
                     <li>
                         <NavLink 
-                            to='Gestion-Emploi-Temps/archive' 
+                            to='Gestion-Emploi-Temps/formateurs'
                             className={({isActive}) => isActive ? "active" : ""}
                         >
                             <span><i className="bi bi-people"></i></span>
@@ -45,7 +45,7 @@ const SideBar = () => {
                     </li>
                     <li>
                         <NavLink 
-                            to='Gestion-Emploi-Temps/settings'
+                            to='Gestion-Emploi-Temps/paramètres'
                             className={({isActive}) => isActive ? "active" : ""}
                         >
                             <span><i className="bi bi-gear"></i></span>

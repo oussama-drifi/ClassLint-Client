@@ -1,8 +1,8 @@
 import './ScheduleTableSkeleton.css'
 
-const SessionSkeletonSkeleton = () => {
+const SessionSkeleton = () => {
     return (
-        <div className="SessionSkeleton-skeleton">
+        <div className="session-skeleton">
             <ul>
                 <li></li>
                 <li></li>
