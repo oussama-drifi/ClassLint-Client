@@ -11,7 +11,10 @@ export const fetchSessions = createAsyncThunk(
             }
             const data = await res.json();
             await new Promise(res => setTimeout(res, 600)); // simulate the dellay
-            return data; 
+            return {
+                date: "2026-02-02",
+                data
+            }; 
         } catch (error) {
             return thunkAPI.rejectWithValue(error.message);
         }
@@ -46,6 +49,7 @@ export const fetchSessions = createAsyncThunk(
 
 const initialState = {
     GroupsSessions: [],
+    week_start: null,
     isLoading: true,
     error: null,
 };
@@ -64,7 +68,8 @@ const SessionsSlice = createSlice({
         })
         .addCase(fetchSessions.fulfilled, (state, action) => {
             state.isLoading = false;
-            state.GroupsSessions = action.payload;
+            state.GroupsSessions = action.payload.data;
+            state.week_start = action.payload.date;
         })
         .addCase(fetchSessions.rejected, (state, action) => {
             state.isLoading = false;

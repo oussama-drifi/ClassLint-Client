@@ -1,13 +1,21 @@
 import './AddSessionModal.css'
 import { useRef, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import SelectMenu from "@/components/selectMenu/selectMenu";
 import { closeModal } from "@/app/slices/addSessionSlice";
+import { getSessionDetails } from '@/app/selectors/selectors';
 // import { useEffect } from 'react';
 
 const AddSessionModal = () => {
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+
+    // const { placeHolder } = useSelector(getSessionDetails);
+
+    const [newSessionData, setNewSessionData] = useState({
+        type: "presentiel",
+        groups: []
+    })
 
     const [selectedOption, setSelectedOption] = useState("select option");
 

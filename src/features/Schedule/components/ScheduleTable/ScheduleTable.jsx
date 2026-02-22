@@ -7,7 +7,23 @@ import EmptySession from '../EmptySession'
 
 const ScheduleTable = () => {
     
-    const { GroupsSessions } = useSelector(getSessionsState);
+    const { GroupsSessions, week_start } = useSelector(getSessionsState);
+
+    
+    const getFormatedDate = (datetime) => {
+        const date = new Date(datetime);
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = String(date.getFullYear()).slice(-2);
+
+        return `${day}/${month}/${year}`;
+    }
+
+    function addDays(dateStr, num) {
+        const date = new Date(dateStr);
+        date.setDate(date.getDate() + num);
+        return date.toISOString().split('T')[0]; // Returns YYYY-MM-DD
+    }
 
     return (
     <div className='table-wrapper'>
@@ -33,9 +49,9 @@ const ScheduleTable = () => {
                                 s 
                                 ? 
                                 <td key={i}>
-                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session id_seance={s.id_seance} num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
-                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
+                                : <td key={i}><EmptySession groupName={g.groupName} num_sceance={i+1} groupId={g.groupId} sessionDate={week_start} /></td>
                             ))
                         }
                         {
@@ -43,9 +59,9 @@ const ScheduleTable = () => {
                                 s 
                                 ?
                                 <td key={i}>
-                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session id_seance={s.id_seance} num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
-                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
+                                : <td key={i}><EmptySession groupName={g.groupName} num_sceance={i+1} groupId={g.groupId} sessionDate={addDays(week_start, 1)} /></td>
                             ))
                         }
                         {
@@ -53,9 +69,9 @@ const ScheduleTable = () => {
                                 s 
                                 ?
                                 <td key={i}>
-                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session id_seance={s.id_seance} num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
-                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
+                                : <td key={i}><EmptySession groupName={g.groupName} num_sceance={i+1} groupId={g.groupId} sessionDate={addDays(week_start, 2)} /></td>
                             ))
                         }
                         {
@@ -63,9 +79,9 @@ const ScheduleTable = () => {
                                 s 
                                 ?
                                 <td key={i}>
-                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session id_seance={s.id_seance} num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
-                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
+                                : <td key={i}><EmptySession groupName={g.groupName} num_sceance={i+1} groupId={g.groupId} sessionDate={addDays(week_start, 3)} /></td>
                             ))
                         }
                         {
@@ -73,9 +89,9 @@ const ScheduleTable = () => {
                                 s 
                                 ?
                                 <td key={i}>
-                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session id_seance={s.id_seance} num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td> 
-                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
+                                : <td key={i}><EmptySession groupName={g.groupName} num_sceance={i+1} groupId={g.groupId} sessionDate={addDays(week_start, 4)} /></td>
                             ))
                         }
                         {
@@ -83,9 +99,9 @@ const ScheduleTable = () => {
                                 s
                                 ?
                                 <td key={i}>
-                                    <Session num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
+                                    <Session id_seance={s.id_seance} num_sceance={i} formateur={s.formateur} nom_module={s.nom_module} nom_salle={s.nom_salle} />
                                 </td>
-                                : <td key={i}><EmptySession num_sceance={i+1} groupId={g.groupId} /></td>
+                                : <td key={i}><EmptySession groupName={g.groupName} num_sceance={i+1} groupId={g.groupId} sessionDate={addDays(week_start, 5)} /></td>
                             ))
                         }
                     </tr>
