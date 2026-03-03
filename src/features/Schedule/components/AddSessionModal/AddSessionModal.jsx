@@ -1,23 +1,27 @@
 import './AddSessionModal.css'
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import SelectMenu from "@/components/selectMenu/selectMenu";
-import { closeModal } from "@/app/slices/addSessionSlice";
+import { closeModal, updateSessionDetails } from "@/app/slices/addSessionSlice";
 import { getSessionDetails } from '@/app/selectors/selectors';
+import axios from 'axios';
 // import { useEffect } from 'react';
 
 const AddSessionModal = () => {
 
     const dispatch = useDispatch();
 
-    // const { placeHolder } = useSelector(getSessionDetails);
+    const { placeHolder } = useSelector(getSessionDetails);
 
     const [newSessionData, setNewSessionData] = useState({
         type: "presentiel",
         groups: []
     })
 
-    const [selectedOption, setSelectedOption] = useState("select option");
+    const [options, setOptions] = useState({
+        modules: [],
+        formateurs: []
+    });
 
     const modalRef = useRef(null);
     const closeButtonRef = useRef(null);
@@ -38,6 +42,23 @@ const AddSessionModal = () => {
         e.preventDefault();
     }
 
+    const handleModuleChange = () => {
+        // const id_module = options.modules.find(m => m.nom === )
+        dispatch(updateSessionDetails({}));
+        console.log(placeHolder);
+        // axios.get(`http://127.0.0.1:5000/api/formateur?id_module=${placeHolder.module.id}&id_groupe=${placeHolder.group.id}`).then((res) => setOptions({
+        //     ...options,
+        //     formateurs: res.data
+        // }))
+    }
+
+    useEffect(() => {
+        axios.get(`http://127.0.0.1:5000/api/modules/${placeHolder.group.id}`).then((res) => setOptions({
+            ...options,
+            modules: res.data
+        }))
+    }, [])
+
     return (
         <div className='overlay'>
             <div className="add-session-modal" ref={modalRef}>
@@ -45,12 +66,15 @@ const AddSessionModal = () => {
                 <h2>Ajouter une Séance</h2>
                 <form onSubmit={onFormSublit}>
                     <div className='form-group'>
-                        <SelectMenu options={['alami', 'hakiki', 'haqay', 'ascour', 'brinsi', 'el omari', 'essoufiani']}/>
-                        <SelectMenu options={['SP-1', 'SP-2', 'SC-10', 'SP-4', 'SP-8', 'LAB-3']}/>
+                        <div className="form-control">
+                            
+                        </div>
+                        <SelectMenu options={options.modules.map(o => o.nom)} initial_text={"choisir un module"} onChange={() => handleModuleChange()}/>
+                        <SelectMenu options={['SP-1', 'SP-2', 'SC-10', 'SP-4', 'SP-8', 'LAB-3']} initial_text={"choisir une salle"} />
                     </div>
-                    <div className='form-group'>
-                        <SelectMenu options={['developpement frontend', 'developpement backend', 'genstion des données', 'projet web', 'approche agile']}/>
-                        <SelectMenu options={['developpement frontend', 'developpement backend', 'genstion des données', 'projet web', 'approche agile']}/>
+                    <div className='form-control'>
+                        <SelectMenu options={options.formateurs} initial_text={"choisir un formateur"} />
+                        <SelectMenu options={['developpement frontend', 'developpement backend', 'genstion des données', 'projet web', 'approche agile']} initial_text={"choisir une salle"} />
                     </div>
                     <button type="submit" className='submit-btn'>ajouter Séance</button>
                 </form>

@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import './selectMenu.css'
 
-const SelectMenu = ({options, refetch}) => {
+const SelectMenu = ({options, onChange, initial_text}) => {
     const [isOptionSelected, setIsOptionSelected] = useState(false);
     const [isShown, setIsShown] = useState(false);
-    const [selectedOption, setSelectedOption] = useState("select option");
+    const [selectedOption, setSelectedOption] = useState(initial_text);
 
     const valRef = useRef(null);
 
@@ -17,7 +17,8 @@ const SelectMenu = ({options, refetch}) => {
         if (valRef.current !== option) {
             setSelectedOption(option);
             valRef.current = option;
-            refetch(index+1);
+            onChange(index+1);
+            console.log("module changed")
         }
         setIsOptionSelected(true);
         setIsShown(prev => !prev);

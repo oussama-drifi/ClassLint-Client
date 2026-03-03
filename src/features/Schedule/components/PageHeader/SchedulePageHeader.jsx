@@ -35,7 +35,7 @@ const SchedulePageHeader = () => {
     return (
         <div className='emploi-page-header'>
             <h1>Emploi Du Semaine</h1>
-            <SelectMenu options={options} refetch={refetch}/>
+            <SelectMenu options={options} onChange={refetch} initial_text={"choisir une semaine"}/>
         </div>
     )
 }

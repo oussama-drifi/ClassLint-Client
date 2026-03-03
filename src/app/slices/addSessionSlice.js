@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { shallowEqual } from "react-redux";
 
 
 export const fetchSessions = createAsyncThunk(
@@ -25,20 +24,21 @@ export const fetchSessions = createAsyncThunk(
 const initialState = {
     isModalOpen: false,
     placeHolder: {
-        groupId: 0,
+        group: {
+            id: 0,
+            name: ''
+        },
+        module: {
+            id: 0,
+            name: '',
+        },
         numSeance: 0,
         date: '',
-        groupName: ''
+        formateur: "",
     },
     sessionDetails: {
-        groupId: 0,
-        numSeance: 0,
-        groupName: "",
-        date: '',
         type: "",
         extraGroups: [],
-        module: "",
-        formateur: "",
         room: "",
     }
 }
@@ -47,9 +47,12 @@ const addSessionSlice = createSlice({
     name: "addSession",
     initialState,
     reducers: {
+        updateSessionDetails: (state, action) => {
+            state.placeHolder = {...state.placeHolder, ...action.payload}
+        },
         openModal: (state, action) => {
             state.isModalOpen = true;
-            state.placeHolder = action.payload;
+            state.placeHolder = {...state.placeHolder, ...action.payload};
             console.log(action.payload)
         },
         closeModal: (state, action) => {
@@ -59,6 +62,6 @@ const addSessionSlice = createSlice({
     }
 })
 
-export const { openModal, closeModal } = addSessionSlice.actions
+export const { openModal, closeModal, updateSessionDetails } = addSessionSlice.actions
 
 export const AddSessionReducer = addSessionSlice.reducer
