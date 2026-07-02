@@ -1,16 +1,102 @@
-# React + Vite
+# Gestion Emploi du Temps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for managing and visualizing weekly training schedules for student groups. Built for internal use at a vocational training center, it allows staff to view timetables by week, track session progress per group, and add new sessions through a modal interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Weekly schedule view per group (Mon–Sat, 4 sessions/day)
+- Session progress statistics per group (Summary page)
+- Add session modal with module, room, and instructor selection
+- Skeleton loading states during data fetch
+- Icon-only sidebar navigation
+- Deployed on Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Route | Page | Description |
+|---|---|---|
+| `/sommaire` | Summary | Progress statistics per group |
+| `/emploi` | Schedule | Weekly timetable grid |
+| `/formateurs` | Instructors | Instructor management (WIP) |
+| `/ajouter` | Add New | Add new entries (WIP) |
+| `/paramètres` | Settings | App settings (WIP) |
+
+---
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── slices/         # Redux slices (sessions, statistics, addSession)
+│   └── selectors/      # Reselect selectors
+├── components/
+│   ├── SideBar/        # Global sidebar navigation
+│   └── selectMenu/     # Reusable dropdown component
+├── features/
+│   ├── Schedule/       # Schedule table, session card, add session modal
+│   └── Summary/        # Group statistics, skeleton loaders
+├── hooks/              # Custom hooks (useFetch)
+├── pages/              # Page-level components per route
+├── routes/             # AppRoutes (React Router config)
+└── assets/
+```
+
+---
+
+## Tech Stack
+
+| Purpose | Package |
+|---|---|
+| Framework | React 19 |
+| Build tool | Vite 6 |
+| Language | TypeScript |
+| Routing | React Router v7 |
+| State management | Redux Toolkit + React Redux |
+| HTTP client | Axios |
+| Icons | Lucide React |
+| Font | Poppins (`@fontsource/poppins`) |
+
+---
+
+## Backend
+
+The app connects to a local Flask API running at `http://127.0.0.1:5000`. The following endpoints are consumed:
+
+- `GET /api/emploi/:week_id` — fetch sessions for a given week
+- `GET /api/progress` — fetch group progress statistics
+- `GET /api/modules/:group_id` — fetch modules available for a group
+
+---
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+> Make sure the Flask backend is running locally before starting the dev server.
+
+---
+
+## Linting
+
+```bash
+npm run lint
+```
+
+ESLint is configured with `@typescript-eslint`, `eslint-plugin-react-hooks`, and `eslint-plugin-react-refresh`.
