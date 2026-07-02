@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './SideBar.css';
 import { NavLink } from "react-router-dom";
+import { House, LayoutDashboard, CalendarDays, Users, Settings, Plus, User, Sun, LogOut, X } from "lucide-react";
 
 const SideBar = () => {
 
@@ -9,14 +10,14 @@ const SideBar = () => {
             <nav>
                 <ul className="primary-links">
                     <li>
-                        <span><i className="bi bi-house"></i></span>
+                        <House />
                     </li>
                     <li>
                         <NavLink 
                             to='/sommaire' 
                             className={({isActive}) => isActive ? "active" : ""}
                         >
-                            <span><i className="bi bi-columns-gap"></i></span>
+                            <span><LayoutDashboard /></span>
                         </NavLink>
                     </li>
                     <li>
@@ -24,7 +25,7 @@ const SideBar = () => {
                             to='/emploi' 
                             className={({isActive}) => isActive ? "active" : ""}
                         >
-                            <span><i className="bi bi-calendar2-week"></i></span>
+                            <span><CalendarDays /></span>
                         </NavLink>
                     </li>
                     <li>
@@ -32,7 +33,7 @@ const SideBar = () => {
                             to='/formateurs'
                             className={({isActive}) => isActive ? "active" : ""}
                         >
-                            <span><i className="bi bi-people"></i></span>
+                            <span><Users /></span>
                         </NavLink>
                     </li>
                     <li>
@@ -40,7 +41,7 @@ const SideBar = () => {
                             to='/ajouter'
                             className={({isActive}) => isActive ? "active" : ""}
                         >
-                            <span><i className="bi bi-plus-lg"></i></span>
+                            <span><Plus /></span>
                         </NavLink>
                     </li>
                     <li>
@@ -48,15 +49,15 @@ const SideBar = () => {
                             to='/paramètres'
                             className={({isActive}) => isActive ? "active" : ""}
                         >
-                            <span><i className="bi bi-gear"></i></span>
+                            <span><Settings /></span>
                         </NavLink>
                     </li>
                 </ul>
 
                 <ul className="seconday-links">
-                    <li><a href="#"><span><i className="bi bi-person"></i></span></a></li>
-                    <li><a href="#"><span><i className="bi bi-brightness-high"></i></span></a></li>
-                    <li><a href="#"><span><i className="bi bi-box-arrow-left"></i></span></a></li>
+                    <li><a href="#"><span><User /></span></a></li>
+                    <li><a href="#"><span><Sun /></span></a></li>
+                    <li><a href="#"><span><LogOut /></span></a></li>
                 </ul>
             </nav>
         </aside>
