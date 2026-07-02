@@ -1,8 +1,23 @@
 import './Session.css'
 
-const Session = ({num_sceance, formateur, nom_module, nom_salle}) => {
-    const timings = ['8:30 à 10:30', '10:30 à 13:00', '13:30 à 16:00', '16:00 à 18:30']
+const SessionSkeleton = () => {
     return (
+        <div className="session skeleon-session" >
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    )
+}
+
+const Session = ({isLoading, num_sceance, formateur, nom_module, nom_salle}) => {
+    
+    const timings = ['8:30 à 10:30', '10:30 à 13:00', '13:30 à 16:00', '16:00 à 18:30']
+
+    return isLoading ? <SessionSkeleton /> : (
         <div className={`session ${nom_salle === "Teams" ? "distanciel" : "presentiel"}`} >
             <ul>
                 <li><span><i className="bi bi-stopwatch"></i></span> {timings[num_sceance]}</li>
