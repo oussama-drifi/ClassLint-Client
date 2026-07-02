@@ -16,7 +16,7 @@ function Layout() {
 export const AppRoutes = () => {
     return (
         <Routes>
-            <Route path="/Gestion-Emploi-Temps" element={<Layout />} >
+            <Route path="/" element={<Layout />} >
                 <Route index element={<Navigate to="sommaire" replace />} />
                 <Route path="sommaire" element={<SummaryPage />} />
                 <Route path="emploi" element={<SchedulePage />} />

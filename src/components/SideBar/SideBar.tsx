@@ -13,7 +13,7 @@ const SideBar = () => {
                     </li>
                     <li>
                         <NavLink 
-                            to='Gestion-Emploi-Temps/sommaire' 
+                            to='/sommaire' 
                             className={({isActive}) => isActive ? "active" : ""}
                         >
                             <span><i className="bi bi-columns-gap"></i></span>
@@ -21,7 +21,7 @@ const SideBar = () => {
                     </li>
                     <li>
                         <NavLink 
-                            to='Gestion-Emploi-Temps/emploi' 
+                            to='/emploi' 
                             className={({isActive}) => isActive ? "active" : ""}
                         >
                             <span><i className="bi bi-calendar2-week"></i></span>
@@ -29,7 +29,7 @@ const SideBar = () => {
                     </li>
                     <li>
                         <NavLink 
-                            to='Gestion-Emploi-Temps/formateurs'
+                            to='/formateurs'
                             className={({isActive}) => isActive ? "active" : ""}
                         >
                             <span><i className="bi bi-people"></i></span>
@@ -37,7 +37,7 @@ const SideBar = () => {
                     </li>
                     <li>
                         <NavLink 
-                            to='Gestion-Emploi-Temps/ajouter'
+                            to='/ajouter'
                             className={({isActive}) => isActive ? "active" : ""}
                         >
                             <span><i className="bi bi-plus-lg"></i></span>
@@ -45,7 +45,7 @@ const SideBar = () => {
                     </li>
                     <li>
                         <NavLink 
-                            to='Gestion-Emploi-Temps/paramètres'
+                            to='/paramètres'
                             className={({isActive}) => isActive ? "active" : ""}
                         >
                             <span><i className="bi bi-gear"></i></span>
