@@ -3,17 +3,17 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useDispatch } from 'react-redux'
 import { fetchSessions } from '@/app/slices/sessionsSlice'
-// components
-import SelectMenu from '@/components/selectMenu/selectMenu'
-
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from '@/components/ui/select'
 
 const SchedulePageHeader = () => {
 
     const dispatch = useDispatch();
-
-    const refetch = (week_id) => {
-        dispatch(fetchSessions(week_id))
-    }
 
     const [weeks, setWeeks] = useState([]);
 
@@ -22,7 +22,6 @@ const SchedulePageHeader = () => {
         const day = String(date.getDate()).padStart(2, '0');
         const month = String(date.getMonth() + 1).padStart(2, '0');
         const year = String(date.getFullYear()).slice(-2);
-
         return `${day}/${month}/${year}`;
     }
 
@@ -30,12 +29,25 @@ const SchedulePageHeader = () => {
         axios.get(`http://127.0.0.1:5000//api/semaines`).then((res) => setWeeks(res.data))
     }, [])
 
-    const options = weeks.map(w => `${w.titre} - ${getFormatedDate(w.date_debut)}`)
+    const handleWeekChange = (value) => {
+        dispatch(fetchSessions(Number(value)))
+    }
 
     return (
         <div className='emploi-page-header'>
             <h1>Emploi Du Semaine</h1>
-            <SelectMenu options={options} onChange={refetch} initial_text={"choisir une semaine"}/>
+            <Select onValueChange={handleWeekChange}>
+                <SelectTrigger className="w-[240px]">
+                    <SelectValue placeholder="choisir une semaine" />
+                </SelectTrigger>
+                <SelectContent>
+                    {weeks.map((w, index) => (
+                        <SelectItem key={w.id ?? index} value={String(index + 1)}>
+                            {`${w.titre} - ${getFormatedDate(w.date_debut)}`}
+                        </SelectItem>
+                    ))}
+                </SelectContent>
+            </Select>
         </div>
     )
 }
